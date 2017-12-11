@@ -7,8 +7,6 @@ namespace Calendar.Core.Droid
     [Activity(Label = "Calendar", MainLauncher = true, Icon = "@mipmap/icon")]
     public class MainActivity : Activity
     {
-        int count = 1;
-
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -20,7 +18,12 @@ namespace Calendar.Core.Droid
             // and attach an event to it
             Button button = FindViewById<Button>(Resource.Id.myButton);
 
-            button.Click += delegate { button.Text = $"{count++} clicks!"; };
+            button.Click += Button_Click;
+        }
+
+        void Button_Click(object sender, System.EventArgs e)
+        {
+
         }
     }
 }
