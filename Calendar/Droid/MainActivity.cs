@@ -4,7 +4,7 @@ using Android.OS;
 
 namespace Calendar.Core.Droid
 {
-    [Activity(Label = "Calendar", MainLauncher = true, Icon = "@mipmap/icon")]
+    [Activity(Label = "Calendar")]
     public class MainActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
